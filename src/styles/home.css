@@ -1,0 +1,107 @@
+.home {
+    height: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+}
+
+.home-cards {
+    padding: 30px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.home-card {
+    position: relative;
+    width: 22%;
+    min-width: 240px;
+    height: 50%;
+    background: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--text2);
+}
+
+.home-card .home-card-date {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 35px;
+    height: 35px;
+    background: var(--bg-date);
+    color: white;
+    font-size: 1.20rem;
+    text-align: center;
+    padding: 6px;
+    border-radius: 100%;
+}
+
+.home-card-options {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+
+.home-card-options .home-card-edit {
+    color: var(--text-success);
+    font-size: 1.75rem;
+    margin-bottom: 8px;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.home-card-options .home-card-edit:hover {
+    transform: scale(1.2);
+}
+
+.home-card-options .home-card-delete {
+    color: var(--text-error);
+    font-size: 1.75rem;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.home-card-options .home-card-delete:hover {
+    transform: scale(1.2);
+}
+
+.home-card-date p:nth-child(1) {
+    font-size: 1.5rem;
+}
+
+.home-card .home-card-img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+}
+
+.home-card .home-card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-card .home-card-info {
+    margin: 8px;
+}
+
+.home-card-info p {
+    margin-top: 4px;
+    font-size: 1.10rem;
+    line-height: 1.6rem;
+}
+
+.home-card .btn-card {
+    background: white;
+    margin: 8px;
+    padding: 4px;
+    border: 1px solid var(--text2);
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.home-card .btn-card:hover {
+    background: var(--text2);
+}

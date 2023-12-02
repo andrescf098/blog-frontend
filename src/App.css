@@ -1,0 +1,82 @@
+:root {
+    --text2: #ccc;
+    --text-sub: #949494;
+    --text-links: #a7a7a7;
+    --text-error: #cc0033;
+    --text-success: #30b97c;
+    --bg-footer: #777777;
+    --bg-date: #e44d3d;
+    --bg-error: #fce4e4;
+    --border-error: #fcc2c3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+}
+
+@media (max-width: 390px) {
+    .nav-options .nav-search input {
+        width: 150px;
+    }
+
+    .myAccount .myAccount-content {
+        width: 320px;
+        min-width: 320px;
+    }
+}
+
+@media (min-width: 1160px) {
+    .navbar .logo {
+        display: inline;
+    }
+
+    .nav-section .nav-links {
+        display: flex;
+    }
+
+    .nav-section .nav-dropdown {
+        display: none;
+    }
+
+    .navbar-dropdown {
+        display: none;
+    }
+
+    .nav-section .nav-options {
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .article-container {
+        grid-template-areas: "b a a a";
+    }
+
+    .article {
+        margin: 44px 34px 44px 0;
+    }
+
+    .article .article-header {
+        padding: 40px 40px 34px 40px;
+    }
+
+    .article .article-body {
+        padding: 10px 40px;
+    }
+
+    .sidebar-cards .card-container {
+        width: 80%;
+    }
+}

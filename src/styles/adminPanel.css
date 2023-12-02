@@ -1,0 +1,44 @@
+.userList {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 1px solid var(--text2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.userList-table {
+    margin: 20px;
+    border-collapse: collapse;
+}
+
+.userList-table-head tr th {
+    padding: 8px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: var(--text-sub);
+    color: white;
+    border: 1px solid var(--text2);
+    border-collapse: collapse;
+}
+
+.userList-table-body tr th {
+    padding: 8px;
+    font-size: 1.1rem;
+    border: 1px solid var(--text2);
+}
+
+.userList-table-body .userList-edit {
+    margin-right: 8px;
+    font-size: 1.4rem;
+    color: var(--text-success);
+    cursor: pointer;
+}
+
+.userList-table-body .userList-delete {
+    font-size: 1.4rem;
+    color: var(--text-error);
+    cursor: pointer;
+}

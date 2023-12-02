@@ -1,0 +1,198 @@
+.navbar {
+
+    display: flex;
+    height: 40px;
+    background: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    display: none;
+    height: 100%;
+    width: 18%;
+    min-width: 135px;
+    vertical-align: top;
+    align-self: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    border-right: 1px solid var(--text2);
+}
+
+.logo p {
+    text-align: center;
+    margin: 10px;
+}
+
+.nav-section {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-section ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-section .nav-links {
+    display: none;
+}
+
+.nav-section .nav-dropdown {
+    display: flex;
+    width: 50px;
+    height: 100%;
+    font-size: 2.1rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar .nav-links li {
+    font-size: 1.25rem;
+    letter-spacing: 0.2rem;
+    padding: 0 18px;
+    border-left: 1px solid var(--text2);
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.navbar .nav-links li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-links);
+}
+
+
+.navbar .nav-links li:nth-child(1) {
+    border: none;
+}
+
+.navbar .nav-options li:nth-child(1) {
+    padding: 11px 18px;
+    font-size: 1.25rem;
+    border-right: 1px solid var(--text2);
+    border-left: 1px solid var(--text2);
+    cursor: pointer;
+}
+
+.navbar .nav-options li:nth-child(2) {
+    padding: 11px 18px;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.nav-options .nav-search input {
+    margin-right: 18px;
+    width: 212px;
+    outline: none;
+    border: 1px solid var(--text2);
+}
+
+.searchbar-container {
+    position: absolute;
+    right: 47px;
+    top: 40px;
+    width: 280px;
+    height: auto;
+    background: white;
+    border: 1px solid var(--text2);
+    z-index: 1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.searchbar-container .searchbar-content {
+    display: flex;
+}
+
+.searchbar-content .card-search {
+    width: 100%;
+    min-height: 50px;
+    margin: 8px;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--text2);
+    cursor: pointer;
+}
+
+.searchbar-content .card-search:hover {
+    background: var(--text2);
+}
+
+.card-search h1 {
+    margin-bottom: 4px;
+}
+
+.searchbar-separator {
+    height: 1px;
+    width: 100%;
+    background: var(--text2);
+}
+
+.searchbar-showmore {
+    width: 100%;
+    height: 30px;
+}
+
+.searchbar-showmore a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
+}
+
+.searchbar-showmore a:hover {
+    text-decoration: underline;
+}
+
+.navbar .navbar-dropdown {
+    position: absolute;
+    top: 40px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--text2);
+    z-index: 1;
+}
+
+.navbar-dropdown .logo-dropdown {
+    min-width: 135px;
+    margin: 12px;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+}
+
+.navbar-dropdown .navbar-dropdown-separator {
+    width: 100%;
+    height: 1px;
+    background: var(--text2);
+}
+
+.navbar-dropdown ul {
+    list-style: none;
+}
+
+.navbar-dropdown li {
+    margin: 8px;
+    text-align: center;
+}
+
+.navbar-dropdown li a {
+    text-decoration: none;
+    color: var(--text-links);
+    font-size: 1.7rem;
+    align-self: center;
+}

@@ -1,0 +1,32 @@
+.recovery-success {
+    width: 240px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 16px;
+    border: 1px solid var(--text2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recovery-success .recovery-success-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 4rem;
+    border-radius: 100%;
+    border: 4px solid var(--text-success);
+    color: var(--text-success);
+
+}
+
+.recovery-success p {
+    font-size: 1.2rem;
+    margin-top: 24px;
+    text-align: center;
+}
