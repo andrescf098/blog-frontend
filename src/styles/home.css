@@ -18,6 +18,7 @@
     width: 22%;
     min-width: 240px;
     height: 50%;
+    max-height: 285px;
     background: white;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--text2);
@@ -88,9 +89,20 @@
 }
 
 .home-card-info p {
+
     margin-top: 4px;
+    height: 20px;
     font-size: 1.10rem;
     line-height: 1.6rem;
+    overflow: hidden;
+
+}
+
+
+.home-card-info h1 {
+    height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .home-card .btn-card {

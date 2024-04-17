@@ -63,6 +63,12 @@
     margin-left: 4px;
 }
 
+.card-content .card-info h2 {
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .card-content .card-info h3 {
     margin-top: 4px;
     color: var(--text-links);
